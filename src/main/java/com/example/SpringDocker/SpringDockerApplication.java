@@ -17,6 +17,11 @@ public class SpringDockerApplication {
 		return"welcome to my docker application";
 	}
 
+	@GetMapping("/topic")
+	public String getTopic(){
+
+		return"welcome to my Topic application";
+	}
 	public static void main(String[] args) {
 		SpringApplication.run(SpringDockerApplication.class, args);
 
